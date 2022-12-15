@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>IOT Automation</title>
+    <h1>Mayur katkar</h1>
+    <style>
+      h1 {
+        padding-left: 50%;
+        background-color: aqua;
+        color: brown;
+      }
+      button {
+        padding: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p onchange="">Temprature :</p>
+    <p>Humidity :</p>
+
+    <!-- <button onclick="s1on()">Switch 1 on</buttton>
+    <button onclick="s1off()">Switch 1 off</buttton> -->
+    <script>
+      function Temprature() {
+        console.log("hellow");
+        fetch("https://console.thinger.io/console/buckets/esp32_temp_1/data");
+      }
+      // function s1off(){
+      //     fetch("https://create.arduino.cc/iot/dashboards/e3075013-f894-491a-bf89-9e5375f7db4c?mode=edit")
+      // }
+    </script>
+  </body>
+</html>
